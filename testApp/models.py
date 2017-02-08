@@ -10,6 +10,6 @@ class Imagen(models.Model):
     nombre = models.CharField(max_length=150, default='nombre')
     paisDeOrigen = models.CharField(max_length=50, default='Colombia')
     ciudad = models.CharField(max_length=50, default='Bogota')
-    interesPorLaReserva = models.CharField(max_length=500, default='interes')
+    interesPorLaReserva = models.CharField(max_length=500, default='comentarios por defecto')
     foto = models.ImageField(upload_to='pic_folder/', default='pic_folder/default.jpg')
 
